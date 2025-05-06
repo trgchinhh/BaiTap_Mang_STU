@@ -56,13 +56,13 @@ int main(){
     dem_scp_o__vi_tri_snt_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
 
     // V. KỸ THUẬT ĐẶT CỜ HIỆU 
-    kiem_tra_so_0_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
-    kiem_tra_snt_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
-    kiem_tra_scp_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
-    kiem_tra_shh_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
-    kiem_tra_so_chan_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
-    kiem_tra_toan_so_chan_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
-    kiem_tra_tang_dan_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
-    kiem_tra_giam_dan_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
-    kiem_tra_cac_pt_bang_nhau_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
+    cout << kiem_tra_so_0_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
+    cout << kiem_tra_snt_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
+    cout << kiem_tra_scp_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
+    cout << kiem_tra_shh_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
+    cout << kiem_tra_so_chan_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
+    cout << kiem_tra_toan_so_chan_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
+    cout << kiem_tra_tang_dan_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
+    cout << kiem_tra_giam_dan_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
+    cout << kiem_tra_cac_pt_bang_nhau_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
 }
