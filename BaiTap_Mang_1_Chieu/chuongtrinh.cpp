@@ -65,4 +65,5 @@ int main(){
     cout << kiem_tra_tang_dan_mang_1_chieu_so_nguyen(mang_so_nguyen, n) << endl;
     cout << kiem_tra_giam_dan_mang_1_chieu_so_nguyen(mang_so_nguyen, n) << endl;
     cout << kiem_tra_cac_pt_bang_nhau_mang_1_chieu_so_nguyen(mang_so_nguyen, n) << endl;
+    return 0;
 }
