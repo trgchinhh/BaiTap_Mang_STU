@@ -538,7 +538,7 @@ int kiem_tra_giam_dan_mang_1_chieu_so_nguyen(int mang_so_nguyen[], int n){
     return 1;
 }
 
-int kiem_tra_cac_pt_bang_nhau_mang_1_chieu_so_nguyen(int mang_so_nguyen[], int n);{
+int kiem_tra_cac_pt_bang_nhau_mang_1_chieu_so_nguyen(int mang_so_nguyen[], int n){
     for(int i = 0; i < n; i++){
         if(mang_so_nguyen[i] != mang_so_nguyen[0]){
             return 0;
