@@ -20,7 +20,7 @@ int main(){
     liet_ke_shh_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
 
     // II. KỸ THUẬT ĐẶT LÍNH CANH
-    cout << "Gia tri lon nhat la: " << tim_gia_tri_max_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl
+    cout << "Gia tri lon nhat la: " << tim_gia_tri_max_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
     cout << "Gia tri nho nhat la: " << tim_gia_tri_min_mang_1_chieu_so_nguyen(mang_so_nguyen[], n);
     cout << "Gia tri duong dau tien la: " << tim_gia_tri_duong_dau_tien_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
     cout << "So hoan hao dau tien la: " << tim_shh_dau_tien_mang_1_chieu_so_nguyen(mang_so_nguyen[], n) << endl;
