@@ -308,31 +308,128 @@ void liet_ke_dong_co_nhieu_snt_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
     cout << endl;
 }
 
+// III. TÍNH TOÁN MA TRẬN 
 
+void tinh_tong_pt_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int sum = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            sum += a[i][j];
+        }
+    }
+    cout << "Tong gia tri phan tu trong ma tran la: " << sum << endl;
+}
 
+void tinh_tich_so_le_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int tich_so_le = 1;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(a[i][j] % 2 != 0){
+                tich_so_le *= a[i][j];
+            }
+        }
+    }
+    cout << "Tich so le trong ma tran la: " << tich_so_le << endl;
+}
 
+void tinh_tong_gt_duong_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int sum = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(a[i][j] > 0){
+                sum += a[i][j];
+            }
+        }
+    }
+    cout << "Tong gia tri duong trong ma tran la: " << sum << endl;
+}
 
+void tinh_tong_so_chia_het_cho_3_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int sum = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(a[i][j] % 3 == 0){
+                sum += a[i][j];
+            }
+        }
+    }    
+    cout << "Tong phan tu chia het cho 3 trong ma tran la: " << sum << endl;
+}
 
+void tinh_tong_boi_cua_2_va_7_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int sum = 0; 
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(a[i][j] % 2 == 0 && a[i][j] % 7 == 0){
+                sum += a[i][j];
+            }
+        }
+    }
+    cout << "Tong boi so cua 2 va 7 la: " << sum << endl;
+}
 
+void tinh_tong_snt_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int sum = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(kiem_tra_snt(a[i][j])){
+                sum += a[i][j];
+            }
+        }
+    }
+    cout << "Tong so nguyen to trong ma tran la: " << sum << endl;
+}
 
+void tinh_tong_shh_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int sum = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(kiem_tra_shh(a[i][j])){
+                sum += a[i][j];
+            }
+        }
+    }
+    cout << "Tong so hoan hao trong ma tran la: " << sum << endl;
+}
 
+void tinh_tong_tbc_snt_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int sum = 0;
+    int count = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(kiem_tra_snt(a[i][j])){
+                sum += a[i][j];
+                count++;
+            }
+        }
+    }
+    cout << "Tong gia tri trung binh cong so nguyen to trong ma tran la: " << (float)(sum/count) << endl;
+}
 
+void tinh_tong_tbc_scp_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int sum = 0;
+    int count = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(kiem_tra_scp(a[i][j])){
+                sum += a[i][j];
+                count++;
+            }
+        }
+    }
+    cout << "Tong gia tri trung binh cong so chinh phuong trong ma tran la: " << (float)(sum/count) << endl;
+}
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+void tinh_tong_tbn_shh_ma_tran_so_nguyen(int a[][SLPT], int n, int m){
+    int sum = 0;
+    int count = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(kiem_tra_shh(a[i][j])){
+                sum += a[i][j];
+                count++;
+            }
+        }
+    }
+    cout << "Tong gia tri trung binh cong so hoan hao trong ma tran la: " << (float)(sum/count) << endl;
+}
